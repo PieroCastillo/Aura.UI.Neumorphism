@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Description>Neumorphism Control's Library for Avalonia.</Description>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <PackageIcon>Aura.UI.NeumorphismLogo.png</PackageIcon>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Aura.UI.NeumorphismLogo.png" Pack="true" PackagePath="/"/>
+    <AvaloniaResource Include="**\*.xaml">
+      <SubType>Designer</SubType>
+    </AvaloniaResource>
+  </ItemGroup>
+  <Import Project="..\..\build\version.props" />
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.10.11" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.12" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.12" />
+    <PackageReference Include="Avalonia.Markup.Xaml.Loader" Version="0.10.12" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.12" />
+    <PackageReference Include="Avalonia.Xaml.Behaviors" Version="0.10.12" />
+    <PackageReference Include="Avalonia.Xaml.Interactivity" Version="0.10.12" />
+    <PackageReference Include="ReactiveUI" Version="17.1.17" />
+    <PackageReference Include="Avalonia" Version="0.10.12" />
+  </ItemGroup>
+</Project>
